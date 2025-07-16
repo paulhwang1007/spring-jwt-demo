@@ -1,11 +1,6 @@
 package com.example.spring_jwt_demo.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import java.time.LocalDateTime;
 import java.util.Collection;
 import java.util.List;
@@ -56,6 +51,7 @@ public class User implements UserDetails {
         return List.of();
     }
 
+    // TODO: Add Proper Boolean Checks
     @Override
     public boolean isAccountNonExpired() {
         return true;
